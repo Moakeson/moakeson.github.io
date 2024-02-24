@@ -5,10 +5,14 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #4e3357;
   color: #fff;
   padding: 20px;
   text-align: center;
+}
+
+main {
+  background-color: #c8e0e0;
 }
 
 nav ul {
@@ -34,20 +38,37 @@ h2 {
   text-align: center;
 }
 
+p {
+  text-align: left;
+}
+
+.portfolio-container {
+  margin: 0 auto; /* Center the container horizontally */
+  text-align: center; /* Center the contents horizontally */
+}
+
 .portfolio-item {
-  margin-bottom: 40px;
+  width: calc(33.33% - 20px); /* Set width for each item to occupy one-third of the container */
+  margin: 20px;
+  padding: 20px; /* Add padding for content inside each item */
+  background: #f0f0f0; /* Set a background color for the items */
+  border-radius: 8px; /* Add rounded corners for a card-like appearance */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  display: inline-block; /* Display items inline */
+  vertical-align: top; /* Align items to the top of their container */
+  height: 200px;
 }
 
-.portfolio-item img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px;
+@media only screen and (max-width: 768px) {
+  /* On smaller screens, set each item to occupy 100% width */
+  .portfolio-item {
+    width: calc(100% - 40px);
+  }
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+.github-icon {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 50%; /* Makes the box rounded */
+  background-color: #20b5d8; /* Background color */
 }

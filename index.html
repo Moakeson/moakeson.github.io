@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Michael Oakeson</title>
   <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
   <header>
@@ -19,29 +21,62 @@
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a passionate web developer with a keen interest in creating dynamic and user-friendly websites. From ideation to the final product I'm ready to tackle any challenge.</p>
-  </section>
+  <main>
+    <section id="about"
+      style="display: flex; flex-direction: column; align-items: center;">
+      <h2>About Me</h2>
+      <div
+        style="display: flex; justify-content: center; align-items: center; margin-top: 20px; width: 100%;">
+        <p style="width: 33%;">I'm a passionate web developer with a keen
+          interest in creating dynamic and user-friendly websites. From ideation
+          to the final product I'm ready to tackle any challenge.</p>
+        <div style="width: 33%; text-align: center;">
+          <img style="width: 50%; height: auto;" src="picture_of_me.png"
+            alt="My picture" />
+        </div>
+      </div>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="portfolio-item">
-      <img src="project1.jpg" alt="Project 1">
-      <h3>Project 1</h3>
-      <p>Description of Project 1</p>
-    </div>
-    <div class="portfolio-item">
-      <img src="project2.jpg" alt="Project 2">
-      <h3>Project 2</h3>
-      <p>Description of Project 2</p>
-    </div>
-    <!-- Add more portfolio items as needed -->
-  </section>
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-container">
+          <div class="portfolio-item">
+            <div class="background-card">
+              <div class="overlay-card">
+                <h3>Code to Success Beta Program</h3>
+                <p>My love of programming started in high school where I was
+                  accepted into a special class to learn programming.</p>
+                <p>Check out some simple projects that started it all.</p>
+                <span
+                  style="display: inline-block; padding: 5px 5px 3px 5px; border-radius: 25%; background-color: #00aeff;">
+                  <a
+                    href="https://github.com/Moakeson/CodeToSuccessBetaProgram">
+                    <img src="icons/github.svg" alt="Code to Success Repo"
+                      width="30" height="30">
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="background-card">
+              <div class="overlay-card">
+                <h3>Under Construction</h3>
+                <p>More to come...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-      <p>You can reach me via email at <a href="mailto:moakeson25@gmail.com">moakeson25@gmail.com</a>.</p>
-  </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me via email at <a
+            href="mailto:moakeson25@gmail.com">moakeson25@gmail.com</a>.</p>
+      </section>
+  </main>
+
+
 </body>
+
 </html>
