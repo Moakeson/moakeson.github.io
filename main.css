@@ -38,8 +38,12 @@ h2 {
   text-align: center;
 }
 
-p {
+div > p {
   text-align: left;
+}
+
+p {
+  text-align: center;
 }
 
 .portfolio-container {
@@ -66,9 +70,35 @@ p {
   }
 }
 
-.github-icon {
-  display: inline-block;
-  padding: 5px;
-  border-radius: 50%; /* Makes the box rounded */
-  background-color: #20b5d8; /* Background color */
+.about-section {
+  margin: 0 auto; /* Center the section horizontally */
+  text-align: center; /* Center the contents horizontally */
+  max-width: 1000px; /* Set maximum width for the about section */
 }
+
+.about-item {
+  width: calc(66.66%); /* Set width for each item to occupy one-third of the container */
+  margin: 20px;
+  padding: 20px; /* Add padding for content inside each item */
+  background: #f0f0f0; /* Set a background color for the items */
+  border-radius: 8px; /* Add rounded corners for a card-like appearance */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  display: inline-block; /* Display items inline */
+  vertical-align: top; /* Align items to the top of their container */
+  height: 200px;
+}
+
+.overlay-card {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.overlay-card img {
+  max-width: 50%; /* Adjust the max-width of the image */
+}
+
+.overlay-card p {
+  flex: 1; /* Allow the paragraph to grow and shrink as needed */
+  padding: 0 20px; /* Add padding to the paragraph */
+}
+
